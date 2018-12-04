@@ -85,10 +85,19 @@ Neste repositório, será disponibilizado todo o conteúdo necessário para a an
 			"10";"Outros"
 			"11";"Outras atividades associativas"
                  
-		 Diante disso, os experimentos foram tratados de três formas distintas para avaliar a performance do modelo:
-		 	"Análise de OSCs com somente mais de uma área de atuação" - foram analisadas e o modelo foi treinado utilizando somente as OSCs que tinham apenas uma área de atuação.
-			"Análise de OSCs com somente mais de uma área de atuação" - foram analisadas e o modelo foi treinado utilizando somente as OSCs que tinham mais de uma área de atuação.
-			"Análise de OSCs com todas as áreas de atuação juntas" - foram analisadas e o modelo foi treinado utilizando todas as OSCs, independente da quantidade de área de atuação.
+	- Diante disso, os experimentos foram tratados de três formas distintas para avaliar a performance do modelo:
+		
+		"Análise de OSCs com somente mais de uma área de atuação"
+			
+			foram analisadas e o modelo foi treinado utilizando somente as OSCs que tinham apenas uma área de atuação.
+			
+		"Análise de OSCs com somente mais de uma área de atuação"
+			
+			foram analisadas e o modelo foi treinado utilizando somente as OSCs que tinham mais de uma área de atuação.
+		
+		"Análise de OSCs com todas as áreas de atuação juntas"
+			
+			foram analisadas e o modelo foi treinado utilizando todas as OSCs, independente da quantidade de área de atuação.
 
 # Requisitos
 - Python 3.6
