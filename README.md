@@ -69,7 +69,27 @@ Neste repositório será disponibilizado todo o conteúdo necessário para a an�
 - webservice.py
 	
 		arquivo python com os códigos necessários para levantar o serviço de webservice para o consumo do modelo gerado.
-	
+- Análise com Jupyter Notebook
+
+	- Durante o processo de análise, foi identificado que uma OSC poderia ter mais de uma área de atuação.
+		
+			"1";"Habitação"
+			"2";"Saúde"
+			"3";"Cultura e recreação"
+			"4";"Educação e pesquisa"
+			"5";"Assistência social"
+			"6";"Religião"
+			"7";"Associações patronais, profissionais e de produtores rurais"
+			"8";"Meio ambiente e proteção animal"
+			"9";"Desenvolvimento e defesa de direitos"
+			"10";"Outros"
+			"11";"Outras atividades associativas"
+                 
+		 Diante disso, os experimentos foram tratados de três formas distintas para avaliar a performance do modelo:
+		 	"Análise de OSCs com somente mais de uma área de atuação" - foram analizadas e o modelo foi treinado utilizando somente as OSCs que tinham apenas uma área de atuação.
+			"Análise de OSCs com somente mais de uma área de atuação" - foram analizadas e o modelo foi treinado utilizando somente as OSCs que tinham mais de uma área de atuação.
+			"Análise de OSCs com todas as áreas de atuação juntas" - foram analizadas e o modelo foi treinado utilizando todas as OSCs, independente da quantidade de área de atuação.
+
 # Requisitos
 - Python 3.6
 - Pandas
