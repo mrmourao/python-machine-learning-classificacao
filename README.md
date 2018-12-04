@@ -1,5 +1,5 @@
 # Classificando área de atuação de OSCs utilizando Random Forest Classifie.
-Com base nos dados dos cadastros já existentes de todas as OSCs do Brasil, os quais foram fornecidos pela equipe de desenvolvimento do IPEA para fins de estudos acadêmicos a ser realizado no Instituto Infnet. Foram desenvolvidas algumas análises e experimentos utilizando o algoritmo de classificação random forest.
+Com base nos dados cadastrais de todas as OSCs do Brasil. Foram desenvolvidas algumas análises e experimentos utilizando o algoritmo de classificação random forest.
 Neste repositório será disponibilizado todo o conteúdo necessário para a análise, criação do modelo preditivo e um webservice para o consumo do modelo.
 - mais informações sobre OSCs: https://mapaosc.ipea.gov.br/
 ## Versão 1.0
