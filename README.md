@@ -102,3 +102,47 @@ Neste repositório, será disponibilizado todo o conteúdo necessário para a an
 - Por padrão o flask inicia o webservice em localhost na porta 5000, logo basta realizar um get para a url: "http://localhost:5000//busca-area-atuacao/consulta?" passando por parâmetros as variáveis: cd_natureza_juridica_osc, ft_razao_social_osc, ft_nome_fantasia_osc, ft_fundacao_osc e cd_classe_atividade_economica_osc. A omissão de qualquer um dos parâmetros não será gerado erro, mas será interpretado como valor nulo que será tratado e enviado para o modelo.
 
 - Dentro da estrutura do projeto, no diretório '/utils' existe um arquivo 'teste_webservice_proj_soapUI.xml', este é referente a um projeto da aplicação SoapUI, uma aplicação para simulação de consumo de webservice, onde pode-se baixar o instalador gratuitamente através do link https://s3.amazonaws.com/downloads.eviware/soapuios/5.4.0/SoapUI-x32-5.4.0.exe e importar o projeto. Assim que importado, basta ativar o webservice pela aplicação python e realizar o teste.
+
+# Avaliando os Resultados
+
+Foram avaliadas a performance de três modelos: o primeiro modelo com somente as OSCs com somente uma área de atuação em seu cadastro, o segundo as OSCs com mais de uma área de atuação e a terceira com todas as OSCs disponíveis. Abaixo o resultado com a performance de cada uma:
+
+- Modelo treinado e testado com OSCs com somente uma área de atuação
+	* Acurácia: 0.9833020158944721
+	* MCC: 0.9778264467836173
+	* Macro de f1_score: 0.9854325502658716
+	* Micro de f1_score: 0.9833020158944721
+	
+	Feature Importances
+	* cd_classe_atividade_economica_osc = 0,904
+	* cd_natureza_juridica_osc = 0,071
+	* ft_nome_fantasia_osc = 0,010
+	* ft_razao_social_osc = 0,008
+	* ft_fundacao_osc = 0,004
+	
+- Modelo treinado e testado com somente OSCs com mais de uma área de atuação
+	* Acurácia: 0.706953642384106
+	* MCC: 0.6138452321845839
+	* Macro de f1_score: 0.2158354064133609
+	* Micro de f1_score: 0.706953642384106
+	
+	Feature Importances
+	* cd_classe_atividade_economica_osc = 0,655
+	* ft_nome_fantasia_osc = 0,214
+	* ft_fundacao_osc = 0,058
+	* ft_razao_social_osc = 0,036
+	* ft_natureza_juridica_osc = 0,019
+	* cd_natureza_juridica_osc = 0,015
+	
+- Modelo treinado e testado com todas as OSCs disponíveis
+	* Acurácia: 0.960003899284725
+	* MCC: 0.9475888501444624
+	* Macro de f1_score: 0.18965208622699484
+	* Micro de f1_score: 0.960003899284725
+	
+	Feature Importances
+	* cd_classe_atividade_economica_osc = 0,883
+	* cd_natureza_juridica_osc = 0,081
+	* ft_nome_fantasia_osc = 0,023
+	* ft_razao_social_osc = 0,008
+	* ft_fundacao_osc = 0,004
