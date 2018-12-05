@@ -103,8 +103,9 @@ Neste repositório, será disponibilizado todo o conteúdo necessário para a an
 - Python 3.6
 - Pandas
 - Pickle
-- Matplotlib
+- Sklearn
 - Tqdm
+- Flask
 
 ### Instalando os requisitos
 
