@@ -106,6 +106,10 @@ Neste repositório, será disponibilizado todo o conteúdo necessário para a an
 - Matplotlib
 - Tqdm
 
+### Instalando os requisitos
+
+	pip install -r requirements.txt
+
 # Exemplo de utilização com webservice
 
 - Por padrão o flask inicia o webservice em localhost na porta 5000, logo basta realizar um get para a url: "http://localhost:5000//busca-area-atuacao/consulta?" passando por parâmetros as variáveis: cd_natureza_juridica_osc, ft_razao_social_osc, ft_nome_fantasia_osc, ft_fundacao_osc e cd_classe_atividade_economica_osc. A omissão de qualquer um dos parâmetros não será gerado erro, mas será interpretado como valor nulo que será tratado e enviado para o modelo.
