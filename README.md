@@ -114,7 +114,7 @@ Neste repositório, será disponibilizado todo o conteúdo necessário para a an
 
 - Por padrão o flask inicia o webservice em localhost na porta 5000, logo basta realizar um get para a url: "http://localhost:5000//busca-area-atuacao/consulta?" passando por parâmetros as variáveis: cd_natureza_juridica_osc, ft_razao_social_osc, ft_nome_fantasia_osc, ft_fundacao_osc e cd_classe_atividade_economica_osc. A omissão de qualquer um dos parâmetros não será gerado erro, mas será interpretado como valor nulo que será tratado e enviado para o modelo.
 
-- Dentro da estrutura do projeto, no diretório '/utils' existe um arquivo 'teste_webservice_proj_soapUI.xml', este é referente a um projeto da aplicação SoapUI, uma aplicação para simulação de consumo de webservice, onde pode-se baixar o instalador gratuitamente através do link https://s3.amazonaws.com/downloads.eviware/soapuios/5.4.0/SoapUI-x32-5.4.0.exe e importar o projeto. Assim que importado, basta ativar o webservice pela aplicação python e realizar o teste.
+- Dentro do repositório, existe um arquivo 'teste_webservice_proj_soapUI.xml', este é referente a um projeto da aplicação SoapUI, uma aplicação para simulação de consumo de webservice, onde pode-se baixar o instalador gratuitamente através do link https://s3.amazonaws.com/downloads.eviware/soapuios/5.4.0/SoapUI-x32-5.4.0.exe e importar o projeto. Assim que importado, basta ativar o webservice pela aplicação python e realizar o teste.
 
 # Avaliando os Resultados
 
