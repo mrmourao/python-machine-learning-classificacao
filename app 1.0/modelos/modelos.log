@@ -1,0 +1,37 @@
+2018-12-04 10:33:36,556 - agrupamento - INFO - Iniciando o processo de agrupamento das areas de atuacao
+2018-12-04 10:33:36,557 - agrupamento - INFO - Lendo o arquivo de configuracao
+2018-12-04 10:33:36,557 - agrupamento - INFO - Importando os dados do arquivo de area de atuacao
+2018-12-04 10:33:38,254 - agrupamento - INFO - Realizando alguns tratamentos nos dados importados
+2018-12-04 10:33:38,866 - agrupamento - INFO - Iniciando o agrupamento
+2018-12-04 17:54:40,703 - agrupamento - INFO - Fim do processo de agrupamento. Total de 26464.14762735367 decorrido.
+2018-12-04 17:54:40,797 - gera_modelo - INFO - Iniciando o processo de geracao do modelo random forest
+2018-12-04 17:54:40,797 - gera_modelo - INFO - Lendo o arquivo de configuracao
+2018-12-04 17:54:40,813 - gera_modelo - INFO - Iniciando a importacao dos dados gerais
+2018-12-04 17:54:54,874 - gera_modelo - INFO - Fim da importacao dos dados gerais. Total de 14.060920476913452 decorrido
+2018-12-04 17:54:54,874 - gera_modelo - INFO - Iniciando a importacao das areas de atuacao agrupada
+2018-12-04 17:54:55,249 - gera_modelo - INFO - Fim da importacao das areas de atuacao agrupada. Total de 0.37499237060546875 decorrido
+2018-12-04 17:54:55,249 - gera_modelo - INFO - Iniciando a uniao dos dados gerais com a area de atuacao agrupada
+2018-12-04 17:55:02,014 - gera_modelo - INFO - Fim da uniao. Total de 6.765382766723633 decorrido
+2018-12-04 17:55:02,014 - gera_modelo - INFO - Iniciando a remocao das colunas 100% nulas
+2018-12-04 17:55:06,842 - gera_modelo - INFO - Fim do processo. Total de 4.82796835899353 decorrido
+2018-12-04 17:55:06,842 - gera_modelo - INFO - Iniciando a remocao das colunas nao relevantes
+2018-12-04 17:55:07,405 - gera_modelo - INFO - Fim do processo. Total de 0.562474250793457 decorrido
+2018-12-04 17:55:07,405 - gera_modelo - INFO - Iniciando o tratamento com label_encoder e preparando o df
+2018-12-04 17:55:07,405 - gera_modelo - INFO - Aplicando o LabelEncoder
+2018-12-04 17:55:18,045 - gera_modelo - INFO - Salvando o LabelEncoder para aplicar em producao
+2018-12-04 17:55:18,045 - gera_modelo - INFO - Substituindo os valores nulos por -1
+2018-12-04 17:55:18,545 - gera_modelo - INFO - Convertendo todos os dados do df para int
+2018-12-04 17:55:36,232 - gera_modelo - INFO - Fim do processo. Total de 28.827146768569946 decorrido
+2018-12-04 17:55:36,232 - gera_modelo - INFO - Iniciando a remocao das colunas com alto nivel de correlacao
+2018-12-04 17:55:36,247 - gera_modelo - INFO - criando uma matriz com a correlacao entre todas as variaveis do df
+2018-12-04 17:55:59,747 - gera_modelo - INFO - Identificando as correlações acima de 0.9 ou menores de -0.9 e removendo as colunas do df
+2018-12-04 17:56:00,371 - gera_modelo - INFO - Fim do processo. Total de 24.124172925949097 decorrido
+2018-12-04 17:56:00,371 - gera_modelo - INFO - Separando os dados de treino e teste em 70% para treino e 30% para teste
+2018-12-04 17:56:00,746 - gera_modelo - INFO - Retirando a variavel de resposta do df de treino e teste
+2018-12-04 17:56:00,746 - gera_modelo - INFO - Fim do processo. Total de 0.3749980926513672 decorrido
+2018-12-04 17:56:00,746 - gera_modelo - INFO - Treinando o modelo de classificacao utilizando o algoritmo RandomForestClassifier da biblioteca sklearn
+2018-12-04 17:56:00,746 - gera_modelo - INFO - Criando o modelo
+2018-12-04 17:56:00,762 - gera_modelo - INFO - Treinando o modelo
+2018-12-04 17:58:46,426 - gera_modelo - INFO - Salvando o modelo para ser usado em producao
+2018-12-04 17:58:47,160 - gera_modelo - INFO - Fim do processo. Total de 166.41359949111938 decorrido
+2018-12-04 17:58:47,160 - gera_modelo - INFO - Fim do processo de geracao do modelo random forest. Total de 246.36290454864502 decorrido.

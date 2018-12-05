@@ -1,0 +1,7 @@
+2018-12-04 10:33:36,555 - __main__ - INFO - Iniciando a aplicacao
+2018-12-04 10:33:36,555 - __main__ - INFO - Lendo o arquivo de configuracao
+2018-12-04 10:33:36,556 - __main__ - INFO - Chamando o metodo de agrupamento das areas de atuacao por osc
+2018-12-04 17:54:40,782 - __main__ - INFO - Fim do processo de agrupamento das areas de atuacao. Total de 26464.225743055344 decorrido.
+2018-12-04 17:54:40,782 - __main__ - INFO - Chamando o processamento para geracao do modelo de classificacao
+2018-12-04 17:58:47,629 - __main__ - INFO - Fim do processamento da geracao do modelo. Total de 246.8472602367401 decorrido.
+2018-12-04 17:58:47,629 - __main__ - INFO - Ativando o WebService
